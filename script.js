@@ -224,7 +224,7 @@ const dailyBoxWrapper = document.getElementById('daily-message-box');
 
 // Daily message
 const messages = [
-  "START OF YOUR BIRTHDAY WEEK YAYYYYYY. I hope you have lots of fun this week and I hope each day is filled with lots of love and laughter. I love you so very much my sweet baby. I’m so proud I get to call u my bestie 😉. Have an amazing week my love ❤️. ",
+  "START OF YOUR BIRTHDAY WEEK YAYYYYYY. (Note: Im writing all ur notes on the 21st of November expecting a whole week of celebrations and whatnot 😛) I hope you have lots of fun this week and I hope each day is filled with lots of love and laughter. I love you so very much my sweet baby. I’m so proud I get to call u my bestie 😉. Have an amazing week my love ❤️. ",
   "SECOND DAAAAYYYYY. I hope you had LOOOOAAADS of fun yesterday my love. ANOTHER 6 DAYS AWAIT. I hope you enjoy the throwbacks with the pictures I dug up some old ones. Just wanted to remind you of our early days and how I met the most amazing person ever. Love you loads kumari. Have fun today ❤️. ",
   "THE BIG DAY IS TOMORROW I CANT WAAAAAAAITTT. One more day until u become unc. Or aunty? ..Aunc?? Anyways. Hope you’ve had a lovely start of the week. Hope you’ve had LOADS of fun. And I hope that you haven’t got diabetes just yet. Can’t wait for tomorrow my love. I love you my cutie patootie. Enjoy the day ❤️.",
   "WOOOOO WOOOOOO ITS THE DAAAAAAAYYYYYY. HAPPY BIRTHDAY MY SWEET GIRL. I’m so proud of you baby. For the things that you’ve endured this last year. For the challenges u overcame this year. For the smiles u put on peoples faces this year. And I’m so honoured to have been a part of your life this last year. One year ago this month, I met the most amazing girl ever. I met someone that I soon truly loved. I met the strongest girl to ever exist. You’ve been such an amazing part of my life ever since you walked into it Rennae. And I’m so glad that I got to spend my time with you this year. Hopefully we have more years to come. For now, all the best to you my dear Rennae. I wish you a year full of happiness and love and success. And I have no doubt in my mind that I’ll be even more proud of you. I love you 3000 my sweet Kumari. Happy birthday ❤️, from Laku. ",
@@ -233,15 +233,7 @@ const messages = [
   "Damn.. and that’s the week. EVERYTHING WAS PERFECT I BET. And I js know your feet are killing from all the dancing (im guessing you were dancing). Yk, I do feel bad for not being able to get you a physical present so I do apologise for that… But I hope this was enough for you. And I hope it made you happy. Also hope that the pictures made you remember our fun times. Our lovely memories. I look forward to making many more with you my dear Kumari. I love you Rennae."
 ];
 
-// (Removed broken reassignment to `msgElem` — modal message is set when opening the letter)
 
-
-// Envelope UI removed — no click handlers necessary here.
-
-
-// (Removed duplicated DOMContentLoaded block - single unified handlers are used above.)
-
-// Remove/fade hearts after their animation finishes so they don't get stuck on screen
 document.querySelectorAll('.heart').forEach(function (heart) {
   heart.addEventListener('animationend', function () {
     try { heart.style.display = 'none'; } catch (e) {}
